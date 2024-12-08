@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+a {
+    text-decoration: none;
+    color: #d8f005; 
+}
+
+.users-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #1f1f1f; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.users-form form input {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0; 
+    font-weight: bold; 
+}
+
+.users-form form input[type=text],
+.users-form form input[type=password],
+.users-form form input[type=email] {
+    padding: 8px;
+    border: 2px solid #444; /* Borde oscuro */
+    border-radius: 4px;
+    outline: none;
+    background-color: #333; /* Fondo oscuro en los campos */
+    color: #e0e0e0; /* Texto claro */
+    transition: .3s;
+}
+
+.users-form form input[type=text]:focus,
+.users-form form input[type=password]:focus,
+.users-form form input[type=email]:focus {
+    border-color: rgb(195, 255, 30);
+    box-shadow: 0 0 6px 0 rgba(216, 212, 5, 0.897);
+}
+
+.users-form form input[type=submit] {
+    border: none;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0657ec; 
+    color: white; 
+    font-weight: bold; /* Botón en negrita */
+}
+
+.users-form form input[type=submit]:hover {
+    background-color: #12ecfc; /* Cambio de color en hover */
+    color: white;
+}
+
+.users-table table {
+    border: 1px solid #444; /* Borde oscuro en la tabla */
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #1f1f1f; /* Fondo oscuro de la tabla */
+}
+
+table tr {
+    background-color: #2a2a2a; /* Fila oscura */
+    border: 1px solid #444;
+    padding: 4px;
+}
+
+table th {
+    padding: 16px;
+    text-align: center;
+    font-size: .85em;
+    color: #e0e0e0; /* Letras claras */
+    font-weight: bold; /* Encabezados en negrita */
+}
+
+.users-table--edit {
+    background: #0aeca1;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.users-table--delete {
+    background: #b11e1e;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(255, 255, 3, 0.960);
+
+}
